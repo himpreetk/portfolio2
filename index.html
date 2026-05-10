@@ -1,426 +1,516 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Himpreet Kaur — Senior QA & Test Automation Engineer</title>
-<link rel="stylesheet" href="css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Share+Tech+Mono&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himpreet Kaur — Quality Engineer</title>
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- Premium Fonts: Playfair Display for headings, Inter for body -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<canvas id="hero-canvas"></canvas>
-<div class="grid-overlay"></div>
-<div class="scan-line"></div>
+  <!-- Ambient Background Glows -->
+  <div class="ambient-orb orb-1"></div>
+  <div class="ambient-orb orb-2"></div>
+  <div class="ambient-orb orb-3"></div>
+  <div class="noise-overlay"></div>
 
-<!-- NAV -->
-<nav>
-  <div class="logo">HIMPREET.QA</div>
-  <div class="nav-links">
-    <a href="#skills">SKILLS</a>
-    <a href="#experience">EXPERIENCE</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="#blogs">BLOGS</a>
-    <a href="#contact">CONTACT</a>
-  </div>
-  <div class="hamburger" id="hamburger">
-    <span></span><span></span><span></span>
-  </div>
-</nav>
+  <!-- Top Navigation -->
+  <nav class="premium-nav">
+    <div class="nav-logo">HK.</div>
+    <div class="nav-links">
+      <a href="#projects">Work</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#experience">Experience</a>
+      <a href="resume.pdf" target="_blank" class="nav-cta">Download CV</a>
+    </div>
+  </nav>
 
-<!-- HERO -->
-<section id="hero">
-  <div class="corner-tl"></div>
-  <div class="corner-br"></div>
-  <div class="hero-badge">&gt; SENIOR QA &amp; TEST AUTOMATION ENGINEER // 7 YEARS BATTLE-TESTED</div>
-  <h1 class="hero-name">
-    <span class="line1">HIMPREET</span>
-    <span class="accent glitch" data-text="KAUR">KAUR</span>
-  </h1>
-  <div class="hero-role">SaaS · Blockchain · Enterprise Systems</div>
-  <p class="hero-sub">[ Selenium · Playwright · Cypress · REST Assured · CI/CD · Shift-Left ]</p>
-  <div class="stats-row">
-    <div class="stat">
-      <div class="stat-num" data-count="7">0</div>
-      <div class="stat-label">YEARS XP</div>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-grid">
+      <div class="hero-content reveal">
+        <h1 class="hero-title">
+          Himpreet <br><span class="italic-accent">Kaur.</span>
+        </h1>
+        <p class="hero-subtitle">
+          A results-driven, <a href="https://atsqa.org/certified-testers/profile/169ccce70ef042cdadfe529da029e526" target="_blank" rel="noopener noreferrer" style="color: #10b981; text-decoration: none; font-weight: 500; border-bottom: 1px dashed rgba(16, 185, 129, 0.4); padding-bottom: 2px;">ISTQB certified</a> QA Engineering professional with 7 years of experience delivering high-reliability software across SaaS, Blockchain, and enterprise platforms. Specialising in manual testing, test automation, Shift-Left quality strategies, secure API validation, and CI/CD-driven delivery.
+        </p>
+        <div class="hero-actions" style="display: flex; gap: 1.25rem; align-items: center; flex-wrap: wrap;">
+          <a href="#projects" class="btn-primary">Explore My Work</a>
+          <a href="resume.pdf" target="_blank" download class="btn-ghost">Download Resume (PDF)</a>
+          <a href="https://www.linkedin.com/in/himpreetkaur4testing/" target="_blank" rel="noopener noreferrer" class="btn-social-icon" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor" stroke="none" width="22" height="22">
+              <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="hero-image reveal" style="transition-delay: 0.2s;">
+        <img src="img/profile.png" alt="Himpreet Kaur Avatar">
+      </div>
     </div>
-    <div class="stat">
-      <div class="stat-num" data-count="40">0</div>
-      <div class="stat-label">% DEFECT REDUCTION</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num" data-count="55">0</div>
-      <div class="stat-label">% COVERAGE INCREASE</div>
-    </div>
-    <div class="stat">
-      <div class="stat-num" data-count="42">0</div>
-      <div class="stat-label">% FASTER CYCLES</div>
-    </div>
-  </div>
-  <div class="cta-row">
-    <a href="#experience" class="btn-primary">VIEW EXPERIENCE</a>
-    <a href="https://www.linkedin.com/in/himpreetkaur4testing/" target="_blank" class="btn-ghost">LINKEDIN</a>
-  </div>
-  <div class="scroll-ind">
-    <span>SCROLL</span>
-    <div class="scroll-line"></div>
-  </div>
-</section>
+  </section>
 
-<!-- SKILLS -->
-<section id="skills">
-  <div class="section-container">
+  <!-- Tech Stack Ticker -->
+  <div class="ticker-wrapper">
+    <div class="ticker-track">
+      <!-- Group 1 -->
+      <div class="ticker-content">
+        <span>Playwright</span><span class="ticker-dot">•</span>
+        <span>Selenium</span><span class="ticker-dot">•</span>
+        <span>Cypress</span><span class="ticker-dot">•</span>
+        <span>Postman</span><span class="ticker-dot">•</span>
+        <span>REST Assured</span><span class="ticker-dot">•</span>
+        <span>Java</span><span class="ticker-dot">•</span>
+        <span>Python</span><span class="ticker-dot">•</span>
+        <span>JavaScript</span><span class="ticker-dot">•</span>
+        <span>Jenkins</span><span class="ticker-dot">•</span>
+        <span>Docker</span><span class="ticker-dot">•</span>
+        <span>Appium</span><span class="ticker-dot">•</span>
+        <span>Cucumber</span><span class="ticker-dot">•</span>
+        <span>JIRA</span><span class="ticker-dot">•</span>
+      </div>
+      <!-- Group 2 (Duplicate for infinite loop) -->
+      <div class="ticker-content">
+        <span>Playwright</span><span class="ticker-dot">•</span>
+        <span>Selenium</span><span class="ticker-dot">•</span>
+        <span>Cypress</span><span class="ticker-dot">•</span>
+        <span>Postman</span><span class="ticker-dot">•</span>
+        <span>REST Assured</span><span class="ticker-dot">•</span>
+        <span>Java</span><span class="ticker-dot">•</span>
+        <span>Python</span><span class="ticker-dot">•</span>
+        <span>JavaScript</span><span class="ticker-dot">•</span>
+        <span>Jenkins</span><span class="ticker-dot">•</span>
+        <span>Docker</span><span class="ticker-dot">•</span>
+        <span>Appium</span><span class="ticker-dot">•</span>
+        <span>Cucumber</span><span class="ticker-dot">•</span>
+        <span>JIRA</span><span class="ticker-dot">•</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <section id="services" class="section-container">
     <div class="section-header reveal">
-      <span class="section-label">// 01 — ARSENAL</span>
-      <h2 class="section-title">TESTING TOOLKIT</h2>
+      <h2 class="section-title">Services <span class="italic-accent">I Offer</span></h2>
+      <div class="header-line"></div>
     </div>
-    <div class="skills-grid">
-
-      <div class="skill-card reveal">
-        <div class="skill-icon">⚡</div>
-        <div class="skill-name">TEST AUTOMATION</div>
-        <p class="skill-desc">Scalable automation frameworks with AI-assisted test generation and cross-browser coverage.</p>
-        <div class="skill-tags">
-          <span class="tag">Selenium</span>
-          <span class="tag">Playwright</span>
-          <span class="tag">Cypress</span>
-          <span class="tag">Appium</span>
-          <span class="tag">TestNG</span>
-        </div>
-        <div class="bar-wrap"><div class="bar" data-w="95"></div></div>
+    <div class="services-grid reveal">
+      <div class="glass-card service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="url(#gradientService1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <defs>
+            <linearGradient id="gradientService1" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8b5cf6" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+        </svg>
+        <h3 class="service-title">Automation Framework Setup</h3>
+        <p class="service-text">Building scalable Selenium & Playwright automation frameworks for web applications.</p>
       </div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">🔗</div>
-        <div class="skill-name">API &amp; INTEGRATION TESTING</div>
-        <p class="skill-desc">Secure API validation, contract testing, and backend reliability across critical service integrations.</p>
-        <div class="skill-tags">
-          <span class="tag">REST Assured</span>
-          <span class="tag">Postman</span>
-          <span class="tag">Karate</span>
-          <span class="tag">Swagger</span>
-        </div>
-        <div class="bar-wrap"><div class="bar" data-w="90"></div></div>
+      <div class="glass-card service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="url(#gradientService2)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <defs>
+            <linearGradient id="gradientService2" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#06b6d4" />
+              <stop offset="100%" stop-color="#10b981" />
+            </linearGradient>
+          </defs>
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <h3 class="service-title">QA Testing Services</h3>
+        <p class="service-text">Manual, functional, and regression testing for reliable product quality.</p>
       </div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">🏗️</div>
-        <div class="skill-name">CI/CD &amp; DEVOPS</div>
-        <p class="skill-desc">Full pipeline integration with automated triggering, Docker containerisation, and deployment gating.</p>
-        <div class="skill-tags">
-          <span class="tag">Jenkins</span>
-          <span class="tag">GitHub Actions</span>
-          <span class="tag">Azure DevOps</span>
-          <span class="tag">Docker</span>
-        </div>
-        <div class="bar-wrap"><div class="bar" data-w="85"></div></div>
+      <div class="glass-card service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="url(#gradientService3)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <defs>
+            <linearGradient id="gradientService3" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#8b5cf6" />
+            </linearGradient>
+          </defs>
+          <polyline points="4 17 10 11 4 5"></polyline>
+          <line x1="12" y1="19" x2="20" y2="19"></line>
+        </svg>
+        <h3 class="service-title">API Automation</h3>
+        <p class="service-text">REST API testing and automated validation using Postman & REST Assured.</p>
       </div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">📊</div>
-        <div class="skill-name">PERFORMANCE TESTING</div>
-        <p class="skill-desc">Load and stress testing to identify system bottlenecks at scale before they reach production.</p>
-        <div class="skill-tags">
-          <span class="tag">JMeter</span>
-          <span class="tag">k6</span>
-        </div>
-        <div class="bar-wrap"><div class="bar" data-w="78"></div></div>
+      <div class="glass-card service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="url(#gradientService4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <defs>
+            <linearGradient id="gradientService4" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#8b5cf6" />
+              <stop offset="100%" stop-color="#10b981" />
+            </linearGradient>
+          </defs>
+          <path d="M8 2v4"/><path d="M16 2v4"/><rect width="12" height="14" x="6" y="6" rx="4"/><path d="M6 10H2"/><path d="M6 14H2"/><path d="M22 10h-4"/><path d="M22 14h-4"/>
+        </svg>
+        <h3 class="service-title">QA Audits & Bug Reporting</h3>
+        <p class="service-text">Identifying defects, improving workflows, and ensuring release readiness.</p>
       </div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">🧬</div>
-        <div class="skill-name">LANGUAGES</div>
-        <p class="skill-desc">Multi-language scripting for diverse testing ecosystems and custom automation solutions.</p>
-        <div class="skill-tags">
-          <span class="tag">Java</span>
-          <span class="tag">Python</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">TypeScript</span>
-          <span class="tag">SQL</span>
-        </div>
-        <div class="bar-wrap"><div class="bar" data-w="85"></div></div>
+      <div class="glass-card service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="url(#gradientService5)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <defs>
+            <linearGradient id="gradientService5" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#06b6d4" />
+              <stop offset="100%" stop-color="#8b5cf6" />
+            </linearGradient>
+          </defs>
+          <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+        </svg>
+        <h3 class="service-title">Performance & Reliability</h3>
+        <p class="service-text">Testing application stability, responsiveness, and performance bottlenecks.</p>
       </div>
 
-      <div class="skill-card reveal">
-        <div class="skill-icon">🛡️</div>
-        <div class="skill-name">QUALITY LEADERSHIP</div>
-        <p class="skill-desc">Shift-Left strategy, defect leakage analysis, KPI reporting, and mentoring engineering teams.</p>
-        <div class="skill-tags">
-          <span class="tag">JIRA</span>
-          <span class="tag">Zephyr</span>
-          <span class="tag">TestRail</span>
-          <span class="tag">BDD/TDD</span>
-        </div>
-        <div class="bar-wrap"><div class="bar" data-w="92"></div></div>
+      <div class="glass-card service-card">
+        <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke="url(#gradientService6)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <defs>
+            <linearGradient id="gradientService6" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#10b981" />
+              <stop offset="100%" stop-color="#06b6d4" />
+            </linearGradient>
+          </defs>
+          <rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="14" x2="23" y2="14"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="14" x2="4" y2="14"></line>
+        </svg>
+        <h3 class="service-title">AI-Powered QA Solutions</h3>
+        <p class="service-text">Exploring intelligent testing workflows and AI-assisted test generation.</p>
       </div>
-
     </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience">
-  <div class="section-container">
+  </section>
+  <!-- Skills Grids -->
+  <section id="expertise" class="section-container">
     <div class="section-header reveal">
-      <span class="section-label">// 02 — EXPERIENCE</span>
-      <h2 class="section-title">MISSION HISTORY</h2>
+      <h2 class="section-title">Core <span class="italic-accent">Competencies</span></h2>
+      <div class="header-line"></div>
     </div>
-    <div class="timeline">
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">SEPT 2025 — PRESENT</div>
-        <div class="tl-role">SDET II</div>
-        <div class="tl-company">WebBuddy LLC, India</div>
-        <ul class="tl-achievements">
-          <li>Led end-to-end quality strategy for an enterprise blockchain platform — reduced regression cycle time by 42%. <span class="achievement-badge">-42% cycle</span></li>
-          <li>Built scalable Selenium-TestNG framework with AI-assisted test generation, increasing coverage by 55% and cutting manual effort by 40% per sprint.</li>
-          <li>Championed Shift-Left testing in collaboration with product and engineering — cut post-release defects by 35%. <span class="achievement-badge">-35% defects</span></li>
-          <li>Standardised quality processes across parallel projects, reducing production defect leakage by 28%.</li>
-        </ul>
+    <div class="skills-grid reveal">
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+        <span class="skill-label">Automation expert</span>
       </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">MAR 2025 — SEPT 2025</div>
-        <div class="tl-role">AUTOMATION ENGINEER</div>
-        <div class="tl-company">Dev3 Technologies, India</div>
-        <ul class="tl-achievements">
-          <li>Led QA team and mentored two junior engineers, strengthening test ownership across projects.</li>
-          <li>Integrated Selenium suites with Jenkins and Docker — reduced build verification time by 30%. <span class="achievement-badge">-30% build time</span></li>
-          <li>API testing with Postman and REST Assured improved backend reliability by 25% across critical services.</li>
-          <li>Embedded Shift-Left testing across e-commerce platforms, reducing post-release issues by 40%.</li>
-        </ul>
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.828 2.828 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5L17 3z"></path></svg>
+        <span class="skill-label">Manual tester</span>
       </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">MAR 2022 — AUG 2023</div>
-        <div class="tl-role">QUALITY ANALYST</div>
-        <div class="tl-company">Intellicore Ltd, United Kingdom</div>
-        <ul class="tl-achievements">
-          <li>Delivered functional, regression, and UI testing across complex enterprise applications for UK clients.</li>
-          <li>Initiated and scaled a Selenium automation framework — reduced regression time by 40%. <span class="achievement-badge">-40% regression</span></li>
-          <li>Designed structured defect reporting workflows contributing to a 30% reduction in post-release issues.</li>
-          <li>Conducted API and integration testing with Postman and REST Assured across enterprise services.</li>
-        </ul>
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="12" height="14" x="6" y="6" rx="4"/><path d="M6 10H2"/><path d="M6 14H2"/><path d="M22 10h-4"/><path d="M22 14h-4"/></svg>
+        <span class="skill-label">Bug tracking</span>
       </div>
-
-      <div class="tl-item">
-        <div class="tl-dot"></div>
-        <div class="tl-date">DEC 2019 — AUG 2020</div>
-        <div class="tl-role">QA ANALYST</div>
-        <div class="tl-company">CodeBrew Labs, India</div>
-        <ul class="tl-achievements">
-          <li>Transitioned high-priority test scenarios from manual to automated with Selenium — reduced defects by 35%.</li>
-          <li>Validated backend APIs via Swagger UI, ensuring secure data flow with third-party services.</li>
-          <li>Streamlined defect-reporting workflows, accelerating bug-resolution cycles across QA and dev teams.</li>
-        </ul>
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M9 12l2 2 4-4"></path></svg>
+        <span class="skill-label">Security audits</span>
       </div>
-
-      <div class="tl-item tl-prior">
-        <div class="tl-dot tl-dot-dim"></div>
-        <div class="tl-date">PRIOR ENGAGEMENTS</div>
-        <div class="tl-role" style="font-size:0.8rem">Junior QA Tester — UnoiaTech (Aug 2019 – Nov 2019) &nbsp;|&nbsp; Software Tester Trainee — Piford Technologies (Jul 2018 – Dec 2018)</div>
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+        <span class="skill-label">Performance tests</span>
       </div>
-
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+        <span class="skill-label">API integration</span>
+      </div>
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+        <span class="skill-label">Data analysis</span>
+      </div>
+      <div class="skill-item">
+        <svg class="skill-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+        <span class="skill-label">Team builder</span>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-  <div class="section-container">
+  </section>
+  <!-- Career Trajectory Section -->
+  <section id="experience" class="section-container">
     <div class="section-header reveal">
-      <span class="section-label">// 03 — PROJECTS</span>
-      <h2 class="section-title">BUILD LOG</h2>
+      <h2 class="section-title">Career <span class="italic-accent">Trajectory</span></h2>
+      <div class="header-line"></div>
     </div>
-    <div class="projects-grid">
-
-      <div class="project-card reveal">
-        <div class="project-num">PROJECT_001</div>
-        <div class="project-title">CAR PARKING SMART BOOKING</div>
-        <p class="project-desc">Intelligent parking allocation and booking system with mobile integration and automated payment workflows. University of Wolverhampton.</p>
-        <div class="project-tech">
-          <span class="tech-pill">Mobile</span>
-          <span class="tech-pill">Automation</span>
-          <span class="tech-pill">Payment Systems</span>
-        </div>
-        <a href="https://github.com/himpreetk/Car_Parking_Solution" target="_blank" class="project-link">→ VIEW ON GITHUB</a>
+    <div class="trajectory-grid reveal">
+      <div class="glass-card detail-card">
+        <h4>SDET II</h4>
+        <div class="meta">WebBuddy LLC<br>Sept 2025 - Present</div>
+        <p>Led end-to-end quality strategy for blockchain platforms, cutting regression cycles by 42%.</p>
       </div>
-
-      <div class="project-card reveal">
-        <div class="project-num">PROJECT_002</div>
-        <div class="project-title">MAJESTIC TOYS E-COMMERCE</div>
-        <p class="project-desc">End-to-end commerce platform with full product, cart, and checkout flow. Built with ReactJS, CodeIgniter3, NodeJS, and MySQL.</p>
-        <div class="project-tech">
-          <span class="tech-pill">ReactJS</span>
-          <span class="tech-pill">NodeJS</span>
-          <span class="tech-pill">CodeIgniter3</span>
-          <span class="tech-pill">MySQL</span>
-        </div>
-        <a href="https://github.com/himpreetk/My-Majestic-Toys" target="_blank" class="project-link">→ VIEW ON GITHUB</a>
+      <div class="glass-card detail-card" style="transition-delay: 0.1s;">
+        <h4>Automation Engineer</h4>
+        <div class="meta">Dev3 Technologies<br>Mar 2025 - Sept 2025</div>
+        <p>Embedded Shift-Left testing, reducing post-release issues by 40% across e-commerce platforms.</p>
       </div>
-
-      <div class="project-card reveal">
-        <div class="project-num">PROJECT_003</div>
-        <div class="project-title">BLOCKCHAIN QA FRAMEWORK</div>
-        <p class="project-desc">Enterprise-grade automation framework for blockchain platform testing — AI-assisted test generation, CI/CD integration, 55% coverage uplift at WebBuddy LLC.</p>
-        <div class="project-tech">
-          <span class="tech-pill">Selenium</span>
-          <span class="tech-pill">TestNG</span>
-          <span class="tech-pill">Jenkins</span>
-          <span class="tech-pill">AI-Assisted</span>
-        </div>
+      <div class="glass-card detail-card" style="transition-delay: 0.2s;">
+        <h4>Quality Analyst</h4>
+        <div class="meta">Intellicore Ltd, UK<br>Mar 2022 - Aug 2023</div>
+        <p>Scaled Selenium frameworks reducing regression time by 40% and preventing service-level failures.</p>
       </div>
-
+      <div class="glass-card detail-card" style="transition-delay: 0.3s;">
+        <h4>QA Analyst</h4>
+        <div class="meta">CodeBrew Labs<br>Dec 2019 - Aug 2020</div>
+        <p>Transitioned manual to automated scenarios, improving quality across modules by 35%.</p>
+      </div>
     </div>
-  </div>
-</section>
-
-<!-- BLOGS -->
-<section id="blogs">
-  <div class="section-container">
+  </section>
+  <!-- Key Achievements Section -->
+  <section id="achievements" class="section-container">
     <div class="section-header reveal">
-      <span class="section-label">// 04 — THOUGHT LEADERSHIP</span>
-      <h2 class="section-title">BLOG TRANSMISSIONS</h2>
+      <h2 class="section-title">Key <span class="italic-accent">Achievements</span></h2>
+      <div class="header-line"></div>
     </div>
-    <p class="blogs-sub reveal">Articles published on LinkedIn · Click any card to read</p>
-    <div class="blogs-grid">
-
-      <div class="blog-card reveal" onclick="window.open('https://www.linkedin.com/in/himpreetkaur4testing/','_blank')">
-        <div class="blog-tag">AUTOMATION · STRATEGY</div>
-        <div class="blog-title">SHIFT-LEFT TESTING: CATCHING BUGS BEFORE THEY COST YOU</div>
-        <p class="blog-excerpt">How embedding QA early in the SDLC transforms release quality, reduces defect leakage, and accelerates delivery cycles.</p>
-        <div class="blog-meta">
-          <span>LinkedIn Article</span>
-          <div class="blog-dot"></div>
-          <span class="blog-read">READ →</span>
-        </div>
+    <div class="achievements-grid reveal">
+      <div class="glass-card detail-card">
+        <h4>Test Automation Scaling</h4>
+        <p>Designed and scaled automation frameworks that reduced regression testing time by 40% and improved release confidence across enterprise modules.</p>
       </div>
-
-      <div class="blog-card reveal" onclick="window.open('https://www.linkedin.com/in/himpreetkaur4testing/','_blank')">
-        <div class="blog-tag">AI · TESTING</div>
-        <div class="blog-title">AI-ASSISTED TEST GENERATION: THE FUTURE OF QA AUTOMATION</div>
-        <p class="blog-excerpt">Exploring how AI tools are augmenting test creation, reducing scripting overhead, and improving coverage in enterprise environments.</p>
-        <div class="blog-meta">
-          <span>LinkedIn Article</span>
-          <div class="blog-dot"></div>
-          <span class="blog-read">READ →</span>
-        </div>
+      <div class="glass-card detail-card" style="transition-delay: 0.1s;">
+        <h4>Shift-Left Implementation</h4>
+        <p>Embedded Shift-Left testing practices across product lifecycles, cutting post-release defects by up to 40% and strengthening early-stage quality alignment.</p>
       </div>
-
-      <div class="blog-card reveal" onclick="window.open('https://www.linkedin.com/in/himpreetkaur4testing/','_blank')">
-        <div class="blog-tag">API · BACKEND</div>
-        <div class="blog-title">CONTRACT TESTING AT SCALE WITH REST ASSURED &amp; PACT</div>
-        <p class="blog-excerpt">A practical guide to consumer-driven contract testing — preventing API breaking changes before they reach production.</p>
-        <div class="blog-meta">
-          <span>LinkedIn Article</span>
-          <div class="blog-dot"></div>
-          <span class="blog-read">READ →</span>
-        </div>
+      <div class="glass-card detail-card" style="transition-delay: 0.2s;">
+        <h4>Backend Service Reliability</h4>
+        <p>Improved backend service reliability by 25% through structured API test coverage using Postman and REST Assured across critical product integrations.</p>
       </div>
-
-      <div class="blog-card reveal" onclick="window.open('https://www.linkedin.com/in/himpreetkaur4testing/','_blank')">
-        <div class="blog-tag">DEVOPS · CI/CD</div>
-        <div class="blog-title">BUILDING QUALITY GATES INTO YOUR CI/CD PIPELINE</div>
-        <p class="blog-excerpt">How to integrate automated test suites into Jenkins and GitHub Actions so quality becomes a continuous, non-negotiable process.</p>
-        <div class="blog-meta">
-          <span>LinkedIn Article</span>
-          <div class="blog-dot"></div>
-          <span class="blog-read">READ →</span>
-        </div>
-      </div>
-
-      <div class="blog-card reveal" onclick="window.open('https://www.linkedin.com/in/himpreetkaur4testing/','_blank')">
-        <div class="blog-tag">LEADERSHIP · MENTORING</div>
-        <div class="blog-title">GROWING QA ENGINEERS: LESSONS FROM THE TRENCHES</div>
-        <p class="blog-excerpt">Reflections on mentoring junior testers, building test culture, and fostering ownership of quality across engineering teams.</p>
-        <div class="blog-meta">
-          <span>LinkedIn Article</span>
-          <div class="blog-dot"></div>
-          <span class="blog-read">READ →</span>
-        </div>
-      </div>
-
-      <div class="blog-card reveal" onclick="window.open('https://www.linkedin.com/in/himpreetkaur4testing/','_blank')">
-        <div class="blog-tag">BLOCKCHAIN · QA</div>
-        <div class="blog-title">TESTING BLOCKCHAIN PLATFORMS: UNIQUE CHALLENGES &amp; STRATEGIES</div>
-        <p class="blog-excerpt">What makes blockchain applications uniquely difficult to test — and the automation strategies that work at enterprise scale.</p>
-        <div class="blog-meta">
-          <span>LinkedIn Article</span>
-          <div class="blog-dot"></div>
-          <span class="blog-read">READ →</span>
-        </div>
-      </div>
-
     </div>
-    <div style="text-align:center;margin-top:2.5rem" class="reveal">
-      <a href="https://www.linkedin.com/in/himpreetkaur4testing/" target="_blank" class="btn-ghost">VIEW ALL ARTICLES ON LINKEDIN</a>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT / TERMINAL -->
-<section id="about">
-  <div class="section-container">
+  </section>
+  <!-- Projects Grid -->
+  <section id="projects" class="section-container">
     <div class="section-header reveal">
-      <span class="section-label">// 05 — PROFILE</span>
-      <h2 class="section-title">INITIALIZE PROFILE</h2>
+      <h2 class="section-title">Selected <span class="italic-accent">Works</span></h2>
+      <div class="header-line"></div>
     </div>
-    <div class="terminal reveal">
-      <div class="term-bar">
-        <div class="dot d1"></div>
-        <div class="dot d2"></div>
-        <div class="dot d3"></div>
-        <div class="term-title">himpreet-kaur.sh</div>
+    
+    <div class="projects-grid" style="grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));">
+      <!-- Project 1 -->
+      <div class="glass-card project-card reveal">
+        <div class="project-year">University Project</div>
+        <h3 class="project-name">Car Parking Smart Booking</h3>
+        <p class="project-desc">Designed an intelligent parking allocation and booking system with mobile integration and automated payment workflows.</p>
+        <div class="project-tags">
+          <span>Mobile</span><span>Payments</span><span>Automation</span>
+        </div>
+        <a href="https://github.com/himpreetk/Car_Parking_Solution" target="_blank" style="display:inline-block; margin-top:1.5rem; color:var(--text-accent); text-decoration:none; font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">View on GitHub →</a>
       </div>
-      <div class="term-line"><span class="g">$</span> <span class="w">cat</span> <span class="c">profile.json</span></div>
-      <div class="term-line mt">{</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"name"</span>: <span class="g">"Himpreet Kaur"</span>,</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"role"</span>: <span class="g">"Senior QA &amp; Test Automation Engineer"</span>,</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"experience"</span>: <span class="g">"7 years"</span>,</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"domains"</span>: [<span class="g">"SaaS"</span>, <span class="g">"Blockchain"</span>, <span class="g">"Enterprise"</span>],</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"education"</span>: <span class="g">"MSc CS — Univ. of Wolverhampton (Highest Merit)"</span>,</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"superpower"</span>: <span class="g">"Shift-Left quality at speed"</span>,</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"interests"</span>: [<span class="p">"AI-Assisted Testing"</span>, <span class="p">"Open Source"</span>, <span class="p">"Mentoring"</span>],</div>
-      <div class="term-line">&nbsp;&nbsp;<span class="c">"status"</span>: <span class="r">"open_to_opportunities"</span></div>
-      <div class="term-line">}</div>
-      <div class="term-line mt"><span class="g">$</span> <span class="w">npm run</span> <span class="c">quality-check</span></div>
-      <div class="term-line"><span class="g">✓</span> <span class="w">Regression suite: 1,247 tests passed</span></div>
-      <div class="term-line"><span class="g">✓</span> <span class="w">API contract tests: all green</span></div>
-      <div class="term-line"><span class="g">✓</span> <span class="w">Coverage: 96.4% · Defect leakage: 0</span></div>
-      <div class="term-line mt"><span class="g">$</span> <span class="cursor-blink"></span></div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact">
-  <div class="section-container">
-    <div class="contact-inner reveal">
-      <div class="section-header">
-        <span class="section-label">// 06 — CONTACT</span>
-        <h2 class="section-title">OPEN CHANNEL</h2>
+      
+      <!-- Project 2 -->
+      <div class="glass-card project-card reveal" style="transition-delay: 0.1s;">
+        <div class="project-year">University Project</div>
+        <h3 class="project-name">Majestic Toys E-Commerce</h3>
+        <p class="project-desc">Developed an end-to-end commerce platform using ReactJS, CodeIgniter3, NodeJS, and MySQL.</p>
+        <div class="project-tags">
+          <span>ReactJS</span><span>NodeJS</span><span>MySQL</span>
+        </div>
+        <a href="https://github.com/himpreetk/My-Majestic-Toys" target="_blank" style="display:inline-block; margin-top:1.5rem; color:var(--text-accent); text-decoration:none; font-size:0.85rem; letter-spacing:0.1em; text-transform:uppercase;">View on GitHub →</a>
       </div>
-      <p class="contact-desc">Got a project that needs battle-tested quality? Looking to strengthen your QA pipeline or hire a seasoned automation engineer? Let's connect.</p>
-      <div class="contact-links">
-        <a href="mailto:kaurhimpreet95@gmail.com" class="contact-link">✉ EMAIL ME</a>
-        <a href="https://www.linkedin.com/in/himpreetkaur4testing/" target="_blank" class="contact-link">💼 LINKEDIN</a>
-        <a href="https://github.com/himpreetk" target="_blank" class="contact-link">⌥ GITHUB</a>
-        <a href="tel:+917015722542" class="contact-link">📞 +91 70157 22542</a>
+      
+      <!-- Project 3 -->
+      <div class="glass-card project-card reveal">
+        <div class="project-year">Enterprise Grade</div>
+        <h3 class="project-name">Blockchain QA Framework</h3>
+        <p class="project-desc">Built scalable Selenium-TestNG automation frameworks leveraging AI-assisted test generation and CI/CD integration, increasing coverage by 55%.</p>
+        <div class="project-tags">
+          <span>Selenium</span><span>Blockchain</span><span>CI/CD</span>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  <!-- Testing Process Section -->
+  <section id="process" class="section-container">
+    <div class="section-header reveal">
+      <h2 class="section-title">Testing Process <span class="italic-accent">(STLC)</span></h2>
+      <div class="header-line"></div>
+    </div>
+    <p class="reveal" style="color: var(--text-muted); font-size: 1.1rem; max-width: 800px; margin-top: -2rem; margin-bottom: 3rem;">
+      A structured approach to ensure quality, reliability, and seamless user experience.
+    </p>
 
-<footer>
-  HIMPREET KAUR · SENIOR QA &amp; TEST AUTOMATION ENGINEER · ALL BUGS BELONG TO HER
-</footer>
+    <div class="process-wrapper reveal">
+      <div class="process-line"></div>
+      <div class="process-steps">
+        
+        <!-- Step 1 -->
+        <div class="process-step">
+          <div class="step-icon-wrapper" style="--step-color: #8b5cf6;">
+            <div class="step-icon">
+              <!-- Search/Doc Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+            </div>
+            <div class="step-number">01</div>
+          </div>
+          <div class="glass-card step-card">
+            <h3 class="step-title">Requirement Analysis</h3>
+            <ul class="step-list">
+              <li>Understand business requirements</li>
+              <li>Analyze user stories and acceptance criteria</li>
+            </ul>
+          </div>
+        </div>
 
-<!-- THREE.JS from CDN -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="js/three-bg.js"></script>
-<script src="js/main.js"></script>
+        <!-- Step 2 -->
+        <div class="process-step">
+          <div class="step-icon-wrapper" style="--step-color: #6366f1;">
+            <div class="step-icon">
+              <!-- Clipboard Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect><path d="M9 14h6"></path><path d="M9 10h6"></path><path d="M9 18h6"></path></svg>
+            </div>
+            <div class="step-number">02</div>
+          </div>
+          <div class="glass-card step-card">
+            <h3 class="step-title">Test Planning</h3>
+            <ul class="step-list">
+              <li>Define testing scope and objectives</li>
+              <li>Select tools, estimate effort and create test strategy</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="process-step">
+          <div class="step-icon-wrapper" style="--step-color: #3b82f6;">
+            <div class="step-icon">
+              <!-- Edit/Pen Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+            </div>
+            <div class="step-number">03</div>
+          </div>
+          <div class="glass-card step-card">
+            <h3 class="step-title">Test Case Design</h3>
+            <ul class="step-list">
+              <li>Create test cases and test data</li>
+              <li>Design scenarios for manual & automated testing</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="process-step">
+          <div class="step-icon-wrapper" style="--step-color: #0ea5e9;">
+            <div class="step-icon">
+              <!-- Play Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+            </div>
+            <div class="step-number">04</div>
+          </div>
+          <div class="glass-card step-card">
+            <h3 class="step-title">Test Execution</h3>
+            <ul class="step-list">
+              <li>Execute test cases</li>
+              <li>Perform functional, regression & API testing</li>
+              <li>Validate results</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 5 -->
+        <div class="process-step">
+          <div class="step-icon-wrapper" style="--step-color: #06b6d4;">
+            <div class="step-icon">
+              <!-- Bug Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="12" height="14" x="6" y="6" rx="4"/><path d="M6 10H2"/><path d="M6 14H2"/><path d="M22 10h-4"/><path d="M22 14h-4"/></svg>
+            </div>
+            <div class="step-number">05</div>
+          </div>
+          <div class="glass-card step-card">
+            <h3 class="step-title">Defect Reporting</h3>
+            <ul class="step-list">
+              <li>Log and track defects</li>
+              <li>Communicate with developers</li>
+              <li>Verify and close fixed defects</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Step 6 -->
+        <div class="process-step">
+          <div class="step-icon-wrapper" style="--step-color: #10b981;">
+            <div class="step-icon">
+              <!-- Zap/Lightning Icon -->
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+            </div>
+            <div class="step-number">06</div>
+          </div>
+          <div class="glass-card step-card">
+            <h3 class="step-title">Automation & Optimization</h3>
+            <ul class="step-list">
+              <li>Build and maintain automation scripts</li>
+              <li>Optimize testing process for efficiency</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="glass-card goal-card reveal mt-8">
+      <div class="goal-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#8b5cf6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+      </div>
+      <div class="goal-content">
+        <span class="goal-label" style="color: #8b5cf6; font-weight: 600; font-size: 1.1rem; margin-right: 1.5rem;">Goal</span>
+        <p style="margin: 0; color: var(--text-muted); font-size: 0.95rem; line-height: 1.6; border-left: 1px solid rgba(255,255,255,0.1); padding-left: 1.5rem;">Deliver high-quality software through a systematic testing approach focused on accuracy, efficiency, and continuous improvement.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Academic Foundation Section -->
+  <section id="education" class="section-container">
+    <div class="section-header reveal">
+      <h2 class="section-title">Academic <span class="italic-accent">Foundation</span></h2>
+      <div class="header-line"></div>
+    </div>
+    <div class="education-grid reveal">
+      <div class="glass-card detail-card">
+        <h4>MSc Computer Science</h4>
+        <div class="meta"><a href="https://www.wlv.ac.uk/" target="_blank" rel="noopener noreferrer" style="color: var(--text-main); text-decoration: none; border-bottom: 1px dashed rgba(139, 92, 246, 0.4); padding-bottom: 2px; transition: all 0.3s ease;">University of Wolverhampton</a>, UK</div>
+        <p>Highest Merit Achiever | Led collaborative software engineering project initiatives with a focus on professional practice.</p>
+      </div>
+      <div class="glass-card detail-card" style="transition-delay: 0.1s;">
+        <h4>B.Tech. Computer Science</h4>
+        <div class="meta"><a href="https://kuk.ac.in/" target="_blank" rel="noopener noreferrer" style="color: var(--text-main); text-decoration: none; border-bottom: 1px dashed rgba(139, 92, 246, 0.4); padding-bottom: 2px; transition: all 0.3s ease;">Kurukshetra University</a>, India</div>
+        <p>Comprehensive foundation in software engineering, algorithms, and quality assurance.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Footer / Contact -->
+  <footer id="contact" class="footer-section reveal">
+    <div class="glass-card contact-card">
+      <h2 class="footer-title">Ready to <span class="italic-accent">Elevate Quality</span></h2>
+      <p class="footer-text">
+        With 7 years of experience delivering high-reliability software, I bring a strong balance of technical depth, structured engineering discipline, and product-centric quality leadership to enable resilient, high-performing digital platforms.
+      </p>
+      <form class="contact-form mt-8" action="mailto:kaurhimpreet95@gmail.com" method="POST" enctype="text/plain">
+        <div class="form-group">
+          <input type="text" name="name" placeholder="Your Name" required class="form-input">
+          <input type="email" name="email" placeholder="Your Email" required class="form-input">
+        </div>
+        <textarea name="message" placeholder="Your Message" rows="4" required class="form-input"></textarea>
+        <div style="margin-top: 0.5rem;">
+          <button type="submit" class="btn-primary" style="width: 100%; border: none; cursor: pointer; font-size: 1rem; padding: 1.25rem; display: flex; align-items: center; justify-content: center;">
+            Send Message
+            <svg style="margin-left: 0.75rem;" viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+          </button>
+        </div>
+      </form>
+
+      <div class="footer-links" style="margin-top: 2.5rem; border-top: 1px solid var(--border-glass); padding-top: 2.5rem;">
+        <a href="mailto:kaurhimpreet95@gmail.com" class="btn-ghost">Email Me</a>
+        <a href="https://www.linkedin.com/in/himpreetkaur4testing/" target="_blank" class="btn-ghost">LinkedIn</a>
+        <a href="resume.pdf" target="_blank" class="btn-ghost">Download Resume</a>
+      </div>
+    </div>
+    <div class="copyright" style="margin-top: 6rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.05); width: 100%; text-align: center; letter-spacing: 0.05em; display: flex; flex-direction: column; gap: 0.5rem; align-items: center;">
+      <span>© 2024-2026 Himpreet Kaur. All Rights Reserved.</span>
+      <span style="font-size: 0.75rem; color: rgba(255,255,255,0.3);">Designed with precision and engineered for quality.</span>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

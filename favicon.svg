@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+    <!-- Dark background matching --bg -->
+    <rect width="120" height="120" rx="24" fill="#030b14" />
+    
+    <!-- Cyberpunk grid accent in the background -->
+    <path d="M 0 20 L 120 20 M 0 40 L 120 40 M 0 60 L 120 60 M 0 80 L 120 80 M 0 100 L 120 100" stroke="rgba(0, 255, 231, 0.05)" stroke-width="1" />
+    <path d="M 20 0 L 20 120 M 40 0 L 40 120 M 60 0 L 60 120 M 80 0 L 80 120 M 100 0 L 100 120" stroke="rgba(0, 255, 231, 0.05)" stroke-width="1" />
+
+    <!-- "H" initial with a glitch mask/offset look -->
+    <!-- Red/pink (neon2) offset -->
+    <path d="M38 35 v50 M82 35 v50 M38 60 h44" stroke="#ff2d78" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter" transform="translate(4, 4)" opacity="0.8"/>
+    
+    <!-- Cyan (neon1) main -->
+    <path d="M38 35 v50 M82 35 v50 M38 60 h44" stroke="#00ffe7" stroke-width="14" stroke-linecap="square" stroke-linejoin="miter" />
+    
+    <!-- Top-Left Corner Accent -->
+    <path d="M 12 28 L 12 12 L 28 12" stroke="#00ffe7" stroke-width="3" fill="none" />
+    
+    <!-- Bottom-Right Corner Accent -->
+    <path d="M 108 92 L 108 108 L 92 108" stroke="#00ffe7" stroke-width="3" fill="none" />
+</svg>
